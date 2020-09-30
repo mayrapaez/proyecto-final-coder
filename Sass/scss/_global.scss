@@ -384,63 +384,84 @@ section .container {
 /*--------------------------------------------------------------
 # Nominaciones
 --------------------------------------------------------------*/
-.nominaciones .icon-box {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  transition: ease-in-out 0.3s;
-}
 
-.c .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
-}
-
-.nominaciones .icon-box h3 {
-  font-weight: 700;
-  margin: 0;
-  padding-left: 10px;
-  line-height: 1;
-  font-size: 16px;
-  color: $color-a;
-}
-
-.nominaciones .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
-}
+.nominaciones {
+  .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: ease-in-out 0.3s;
+  
+  
+  & i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+  }
+  
+  & h3 {
+    font-weight: 700;
+    margin: 0;
+    padding-left: 10px;
+    line-height: 1;
+    font-size: 16px;
+    color: $color-a;
+  }
+  
+  &:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+  }
+  }
 
 /*--------------------------------------------------------------
 # discografias
 --------------------------------------------------------------*/
-.testimonials .testimonial-item {
-  box-sizing: content-box;
-  min-height: 320px;
-  padding: 10px;
-}
 
-.testimonials .testimonial-item .testimonial-img {
-  width: 90px;
-  border-radius: 50%;
-  margin: -40px 0 0 40px;
-  position: relative;
-  z-index: 2;
-  border: 6px solid rgba(255, 255, 255, 0.12);
-}
+.testimonial {
+    
+  .testimonial-item {
+  
+    box-sizing: content-box;
+    min-height: 320px;
+    padding: 10px;
+  
+  & h3 {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 10px 0 5px 45px;
+    color: $color-a;
+   
+  }
+  
+  & h4 {
+    font-size: 10px;
+    color: #999;
+    margin: 0 0 0 45px;
+  }
+  
+  & p {
+    font-style: italic;
+    margin: 0 15px 0 15px;
+    padding: 20px 20px 60px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    position: relative;
+    border-radius: 6px;
+    position: relative;
+    z-index: 1;
+  }
+  }
+  .testimonial-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: -40px 0 0 40px;
+    position: relative;
+    z-index: 2;
+    border: 6px solid rgba(255, 255, 255, 0.12);
+  }
+  }
 
-.testimonials .testimonial-item h3 {
-  font-size: 12px;
-  font-weight: bold;
-  margin: 10px 0 5px 45px;
-  color: $color-a;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 10px;
-  color: #999;
-  margin: 0 0 0 45px;
-}
 
 .testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
@@ -460,16 +481,6 @@ section .container {
   top: 10px;
 }
 
-.testimonials .testimonial-item p {
-  font-style: italic;
-  margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: rgba(255, 255, 255, 0.1);
-  position: relative;
-  border-radius: 6px;
-  position: relative;
-  z-index: 1;
-}
 
 .testimonials .owl-nav, .testimonials .owl-dots {
   margin-top: 5px;
@@ -483,12 +494,12 @@ section .container {
   height: 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.3) !important;
-}
 
-.testimonials .owl-dot.active {
+
+&.active {
   background-color: $magenta-color !important;
 }
-
+}
 @media (max-width: 767px) {
   .testimonials {
     margin: 30px 10px;
@@ -738,7 +749,7 @@ section .container {
 .contact .php-email-form .sent-message {
   display: none;
   background: rgba(255, 255, 255, 0.08);
-  background: #991749;
+  background: $magenta-color;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -758,7 +769,7 @@ section .container {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #991749;
+  border: 3px solid $magenta-color;
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
@@ -812,7 +823,7 @@ section .container {
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #991749;
+  background: $magenta-color;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -857,20 +868,4 @@ section .container {
   color: $color-a;
   z-index: 1;
 }
-
-@media (max-width: 992px) {
-  .credits {
-    text-align: center;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
-  }
-}
-
-.credits a {
-  color: $magenta-color;
-  transition: 0.3s;
-}
-
-.credits a:hover {
-  color: $color-a;
 }
