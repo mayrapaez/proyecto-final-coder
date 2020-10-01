@@ -1,0 +1,17 @@
+@mixin titulos ($line-height, $font-size, $margin, $padding, $font-weight, $font-family, $color ){
+    font-size: $font-sizepx;
+    margin: $margin;
+    padding: $padding;
+    line-height: $line-height;
+    font-weight: font-weight;
+    font-family: $fuente-pr;
+    color: $color-a;
+}
+
+@mixin flexbox ($display, $align-items, $justify, $wrap) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify;
+    flex-wrap: $wrap;
+}
+    
