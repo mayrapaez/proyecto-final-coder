@@ -65,9 +65,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 a, #header h1 a:hover {
-  color: rgb(226, 213, 213);
+  color: #f1eff0;
   line-height: 1;
   display: inline-block;
+  text-rendering: auto;
+  background-color: rgba(0, 0, 0, 0.63);
 }
 
 #header h2 {
@@ -75,6 +77,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   margin-top: 20px;
   color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.651);
 }
 
 #header h2 span {
