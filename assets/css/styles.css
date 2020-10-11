@@ -669,8 +669,8 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: rgba(164, 194, 29, 0.1);
-  padding: 110px 30px;
+  background: rgba(65, 41, 41, 0.301);
+  padding: 85px 30px;
   transition: all ease-in-out 0.3s;
 }
 
@@ -678,7 +678,7 @@ section .container {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #f8f5f5cc;
+  background: #f8f5f5d8;
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   display: flex;
@@ -700,7 +700,7 @@ section .container {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(240, 10, 152, 0.568);
   border-radius: 5px;
   transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
@@ -720,8 +720,9 @@ section .container {
   line-height: 24px;
   font-size: 19px;
   margin-bottom: 0;
-  padding-top: 10px;
+  padding-top: 15px;
   letter-spacing: 2px;
+  text-align: center;
   
 }
 
@@ -743,7 +744,7 @@ section .container {
 }
 
 .services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: rgba(255, 255, 255, 0.548);
+  color: rgba(255, 255, 255, 0.596);
 }
 
 /*--------------------------------------------------------------
