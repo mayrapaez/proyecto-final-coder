@@ -665,16 +665,16 @@ section .container {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Novedades
 --------------------------------------------------------------*/
-.services .icon-box {
+.novedades .icon-box {
   text-align: center;
   background: rgba(65, 41, 41, 0.301);
   padding: 85px 30px;
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box .icon {
+.novedades .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
@@ -688,12 +688,12 @@ section .container {
   transform-style: preserve-3d;
 }
 
-.services .icon-box .icon i {
+.novedades .icon-box .icon i {
   color: rgb(15, 15, 15);
   font-size: 28px;
 }
 
-.services .icon-box .icon::before {
+.novedades .icon-box .icon::before {
   position: absolute;
   content: '';
   left: -8px;
@@ -706,17 +706,17 @@ section .container {
   transform: translateZ(-1px);
 }
 
-.services .icon-box h4 {
+.novedades .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 34px;
 }
 
-.services .icon-box h4 a {
+.novedades .icon-box h4 a {
   color: #fff;
 }
 
-.services .icon-box p {
+.novedades .icon-box p {
   line-height: 24px;
   font-size: 19px;
   margin-bottom: 0;
@@ -726,24 +726,24 @@ section .container {
   
 }
 
-.services .icon-box:hover {
+.novedades .icon-box:hover {
   background: #ebc4d47c;
   border-color: #9e6c81;
 }
 
-.services .icon-box:hover .icon {
+.novedades .icon-box:hover .icon {
   background: rgb(255, 255, 255);
 }
 
-.services .icon-box:hover .icon i {
+.novedades .icon-box:hover .icon i {
   color: #881645;
 }
 
-.services .icon-box:hover .icon::before {
+.novedades .icon-box:hover .icon::before {
   background: #88164550;
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
+.novedades .icon-box:hover h4 a, .novedades .icon-box:hover p {
   color: rgba(255, 255, 255, 0.596);
 }
 
